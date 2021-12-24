@@ -349,7 +349,7 @@ footer .social h3 {
 
 @media only screen and (max-width: 980px) {
   footer {
-    top: 550%;
+    top: 560%;
     flex-direction: column;
   }
   footer .links {
