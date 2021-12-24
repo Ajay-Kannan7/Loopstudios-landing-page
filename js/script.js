@@ -1,4 +1,3 @@
-import LocomotiveScroll from 'locomotive-scroll';
 
 var navBar=document.querySelector('#nav .container-fluid .navbar-header button span');
 var button=document.querySelector('#nav .container-fluid .navbar-header button');
@@ -12,13 +11,5 @@ button.addEventListener('click',()=>{
     else{
         navBar.setAttribute('class','fa fa-navicon');
         navBar.style.cssText='color:#fff; border:none; font-size:20px';
-    }
-});
-
-const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true,
-    smartphone:{
-        smooth:false
     }
 });
