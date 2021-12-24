@@ -72,7 +72,8 @@ For more about SASS, you can visit the documentation site:- https://sass-lang.co
    ```
    
    ## Desktop design
-   
+   ![image](https://user-images.githubusercontent.com/78952955/147336163-54d7cae4-178b-4b10-91e6-03c8c6d4d52d.png)
    ## Mobile design
-   
+   ![image](https://user-images.githubusercontent.com/78952955/147336316-a3f8840a-fd0b-4e5d-91e0-5f566f97d89b.png)
    ## Live site URL
+  https://loopstudios-org.netlify.app/
