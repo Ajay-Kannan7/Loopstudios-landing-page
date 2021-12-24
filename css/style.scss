@@ -1,0 +1,389 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    font-family:alata;
+}
+@font-face{
+    font-family:alata;
+    src:url('../fonts/Alata-Regular.ttf');
+}
+@mixin flexbox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*Navigation bar designing starts here*/
+#nav{
+    background:transparent;
+    border:none;
+    padding:15px 25px;
+    .container-fluid .navbar-header .navbar-brand{
+        font-size:40px;
+        color:#fff;
+    }
+    .container-fluid #dropdown ul li a{
+        color:#fff;
+        position:relative;
+        font-size:18px;
+    }
+    .container-fluid #dropdown ul li a::after{
+        content:'';
+        width:0%;
+        height:2px;
+        background-color:#fff;
+        position:absolute;
+        top:100%;
+        left:5%;
+        transition:width 0.4s ease-in;
+    }
+    .container-fluid #dropdown ul li a:hover::after{
+        width:90%;
+    }
+}
+
+@media only screen and (max-width:340px){
+    #nav{
+    .container-fluid .navbar-header .navbar-brand{
+        font-size:25px;
+    }
+}
+}
+/*Navigation bar designing ends here*/
+/*Banner designing starts here*/
+.banner{
+    width:100%;
+    height:100vh;
+    background-image:url('../images/desktop/image-hero.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    position:absolute;
+    top:0;
+    z-index:-2;
+    h1{
+        width:50%;
+        margin-top:20%;
+        margin-left:10%;
+        color:#fff;
+        border:2px solid #fff;
+        font-size:50px;
+        padding:30px;
+        animation:fadeIn 1.2s ease-in;
+    }
+}
+@media only screen and (max-width:500px){
+    .banner{
+        h1{
+            width:100%;
+            font-size:50px;
+            margin:80% auto;
+        }
+    }
+}
+@media only screen and (max-width:320px){
+    .banner{
+        h1{
+            width:100%;
+            font-size:30px;
+            margin:110% auto;
+        }
+    }
+}
+/*Banner designing ends here*/
+/*Body one designing starts here*/
+.body-one{
+    width:100%;
+    position:absolute;
+    top:100%;
+    padding:50px 0px;
+    @include flexbox;
+    img{
+        width:50%;
+    }
+    .content{
+        width:45%;
+        background-color:#fff;
+        padding:70px 30px;
+        position:relative;
+        right:5%;
+        top:6.9vh;
+        h2{
+            font-size:50px;
+            font-weight:lighter;
+        }
+    }
+}
+@media only screen and (max-width:960px){
+    .body-one{
+        flex-direction:column;
+        img,.content{
+            width:95%;
+        }
+        .content{
+            padding:10px 30px;
+            text-align:center;
+            top:0;
+            right:0;
+            h2{
+                font-size:30px;
+            }
+            p{
+                font-size:20px;
+            }
+        }
+    }
+}
+/*Body one designing ends here*/
+/*Body two designing starts here*/
+.body-two{
+    width:100%;
+    position:absolute;
+    top:200%;
+    .heading{
+        width:75%;
+        margin:0 auto;
+        display:flex;
+        justify-content:space-between;
+        h2{
+            font-size:40px;
+            font-weight:lighter;
+        }
+        button{
+            width:15%;
+            height:5%;
+            margin-top:2%;
+            border-radius: 0;
+            border:2px solid #000;
+            letter-spacing:3px;
+            transition:all 0.3s ease-in;
+        }
+        button:hover{
+            color:#fff;
+            background-color:#000;
+        }
+    }
+    .show-case{
+        width:85%;
+        margin:5% auto;
+        display:flex;
+        justify-content:space-between;
+        flex-wrap:wrap;
+        .show{
+            width:22%;
+            height:80vh;
+            color:#fff;
+            font-size:25px;
+            letter-spacing:3px;
+            padding-top:35%;
+            padding-left:1%;
+            margin-bottom:2%;
+            cursor:pointer;
+            transform:scale(1.2);
+        }
+        .show:hover{
+            box-shadow:7px 7px 20px #000;
+        }
+        .one{
+            background-image:url("../images/desktop/image-deep-earth.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .two{
+            background-image:url("../images/desktop//image-night-arcade.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .three{
+            background-image:url("../images/desktop/image-grid.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .four{
+            background-image:url("../images/desktop/image-soccer-team.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .five{
+            background-image:url("../images/desktop/image-from-above.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .six{
+            background-image:url("../images/desktop/image-pocket-borealis.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .seven{
+            background-image:url("../images/desktop/image-curiosity.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+        .eight{
+            background-image:url("../images/desktop/image-fisheye.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+        }
+    }
+
+    .bottom{
+        width:15%;
+        border-radius: 0;
+        margin:0 auto;
+        border:2px solid #000;
+        letter-spacing:3px;
+        transition:all 0.3s ease-in;
+        margin-left:35%;
+        display:none;
+    }
+    .bottom:hover{
+        color:#fff;
+        background-color:#000;
+    }
+}
+@media only screen and (max-width:980px){
+.body-two{
+        top:200%;
+        .heading{
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            button{
+                display:none;
+            }
+        }
+        .show-case{
+            flex-direction:column;
+            .show{
+                width:100%;
+                height:30vh;
+            }
+            .show:hover{
+                box-shadow:none;
+            }
+            .one{
+                background-image:url("../images/desktop/image-deep-earth.jpg");
+            }
+            .two{
+                background-image:url("../images/mobile/image-night-arcade.jpg");
+            }
+            .three{
+                background-image:url("../images/mobile/image-grid.jpg");
+            }
+            .four{
+                background-image:url("../images/mobile/image-soccer-team.jpg");
+            }
+            .five{
+                background-image:url("../images/mobile/image-from-above.jpg");
+            }
+            .six{
+                background-image:url("../images/mobile/image-pocket-borealis.jpg");
+            }
+            .seven{
+                background-image:url("../images/mobile/image-curiosity.jpg");
+            }
+            .eight{
+                background-image:url("../images/mobile/image-fisheye.jpg");
+            }
+        }
+        .bottom{
+            width:35%;
+            display:block;
+            margin-bottom:5%;
+        }
+    }
+}
+/*Body two designing ends here*/
+/*Footer designing starts here*/
+footer{
+    width:100%;
+    position:absolute;
+    top:400%;
+    background-color:#000;
+    color:#fff;
+    display:flex;
+    padding:30px 0px;
+    .links{
+        width:40%;
+        margin:0 auto;
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        img{
+            width:50%;
+            margin-bottom:5%;
+        }
+        .pages{
+            width:90%;
+            display:flex;
+            justify-content:space-between;
+            a{
+                text-decoration:none;
+                color:#fff;
+                font-size:18px;
+                transition:opacity 0.3s ease-in;
+            }
+            a:hover{
+                opacity:0.4;
+            }
+        }
+    }
+    .social{
+        width:28%;
+        margin:0 auto;
+        .media{
+            width:80%;
+            display:flex;
+            justify-content:space-between;
+            a{
+                text-decoration:none;
+                color:#fff;
+                font-size:27px;
+                transition:opacity 0.3s ease-in;
+                margin-bottom:9%;
+            }
+            a:hover{
+                opacity:0.4;
+            }
+        }
+        h3{
+            font-size:15px;
+        }
+    }
+}
+@media only screen and (max-width:980px){
+    footer{
+        top:500%;
+        flex-direction:column;
+        .links{
+            width:100%;
+            justify-content:center;
+            img{
+                display:block;
+                margin: 5% auto;
+            }
+            .pages{
+                width:100%;
+                flex-direction:column;
+                text-align:center;
+                a{
+                    margin-bottom:3%;
+                }
+            }
+        }
+        .social{
+            width:100%;
+            margin-top:5%;
+            .media{
+                width:50%;
+                margin:0 auto;
+            }
+            h3{
+                width:100%;
+                text-align:center;
+                font-size:16px;
+            }
+        }
+    }
+}
+/*Footer designing ends here*/

@@ -1,0 +1,437 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: alata;
+}
+
+@font-face {
+  font-family: alata;
+  src: url("Alata-Regular.f152d6c1.ttf");
+}
+
+/*Navigation bar designing starts here*/
+
+#nav {
+  background: transparent;
+  border: none;
+  padding: 15px 25px;
+}
+
+#nav .container-fluid .navbar-header .navbar-brand {
+  font-size: 40px;
+  color: #fff;
+}
+
+#nav .container-fluid #dropdown ul li a {
+  color: #fff;
+  position: relative;
+  font-size: 18px;
+}
+
+#nav .container-fluid #dropdown ul li a::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  top: 100%;
+  left: 5%;
+  transition: width 0.4s ease-in;
+}
+
+#nav .container-fluid #dropdown ul li a:hover::after {
+  width: 90%;
+}
+
+@media only screen and (max-width: 340px) {
+  #nav .container-fluid .navbar-header .navbar-brand {
+    font-size: 25px;
+  }
+}
+
+/*Navigation bar designing ends here*/
+
+/*Banner designing starts here*/
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  background-image: url("image-hero.b7dbbfff.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+}
+
+.banner h1 {
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 10%;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 50px;
+  padding: 30px;
+  -webkit-animation: fadeIn 1.2s ease-in;
+          animation: fadeIn 1.2s ease-in;
+}
+
+@media only screen and (max-width: 500px) {
+  .banner h1 {
+    width: 100%;
+    font-size: 50px;
+    margin: 80% auto;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .banner h1 {
+    width: 100%;
+    font-size: 30px;
+    margin: 110% auto;
+  }
+}
+
+/*Banner designing ends here*/
+
+/*Body one designing starts here*/
+
+.body-one {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.body-one img {
+  width: 50%;
+}
+
+.body-one .content {
+  width: 45%;
+  background-color: #fff;
+  padding: 70px 30px;
+  position: relative;
+  right: 5%;
+  top: 6.9vh;
+}
+
+.body-one .content h2 {
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+@media only screen and (max-width: 960px) {
+  .body-one {
+    flex-direction: column;
+  }
+  .body-one img, .body-one .content {
+    width: 95%;
+  }
+  .body-one .content {
+    padding: 10px 30px;
+    text-align: center;
+    top: 0;
+    right: 0;
+  }
+  .body-one .content h2 {
+    font-size: 30px;
+  }
+  .body-one .content p {
+    font-size: 20px;
+  }
+}
+
+/*Body one designing ends here*/
+
+/*Body two designing starts here*/
+
+.body-two {
+  width: 100%;
+  position: absolute;
+  top: 200%;
+}
+
+.body-two .heading {
+  width: 75%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-two .heading h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+
+.body-two .heading button {
+  width: 15%;
+  height: 5%;
+  margin-top: 2%;
+  border-radius: 0;
+  border: 2px solid #000;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in;
+}
+
+.body-two .heading button:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+.body-two .show-case {
+  width: 85%;
+  margin: 5% auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.body-two .show-case .show {
+  width: 22%;
+  height: 80vh;
+  color: #fff;
+  font-size: 25px;
+  letter-spacing: 3px;
+  padding-top: 35%;
+  padding-left: 1%;
+  margin-bottom: 2%;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.body-two .show-case .show:hover {
+  box-shadow: 7px 7px 20px #000;
+}
+
+.body-two .show-case .one {
+  background-image: url("image-deep-earth.35b33e18.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .two {
+  background-image: url("image-night-arcade.bf7f6a86.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .three {
+  background-image: url("image-grid.ea6d5abb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .four {
+  background-image: url("image-soccer-team.7ac4abf9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .five {
+  background-image: url("image-from-above.f425c6e9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .six {
+  background-image: url("image-pocket-borealis.d7392b2b.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .seven {
+  background-image: url("image-curiosity.31daccd8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .show-case .eight {
+  background-image: url("image-fisheye.9c3c7ee1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.body-two .bottom {
+  width: 15%;
+  border-radius: 0;
+  margin: 0 auto;
+  border: 2px solid #000;
+  letter-spacing: 3px;
+  transition: all 0.3s ease-in;
+  margin-left: 35%;
+  display: none;
+}
+
+.body-two .bottom:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+@media only screen and (max-width: 980px) {
+  .body-two {
+    top: 200%;
+  }
+  .body-two .heading {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .body-two .heading button {
+    display: none;
+  }
+  .body-two .show-case {
+    flex-direction: column;
+  }
+  .body-two .show-case .show {
+    width: 100%;
+    height: 30vh;
+  }
+  .body-two .show-case .show:hover {
+    box-shadow: none;
+  }
+  .body-two .show-case .one {
+    background-image: url("image-deep-earth.35b33e18.jpg");
+  }
+  .body-two .show-case .two {
+    background-image: url("image-night-arcade.9deb71bb.jpg");
+  }
+  .body-two .show-case .three {
+    background-image: url("image-grid.d056f557.jpg");
+  }
+  .body-two .show-case .four {
+    background-image: url("image-soccer-team.954fbc00.jpg");
+  }
+  .body-two .show-case .five {
+    background-image: url("image-from-above.4907252a.jpg");
+  }
+  .body-two .show-case .six {
+    background-image: url("image-pocket-borealis.413da30a.jpg");
+  }
+  .body-two .show-case .seven {
+    background-image: url("image-curiosity.60473e6f.jpg");
+  }
+  .body-two .show-case .eight {
+    background-image: url("image-fisheye.8491c7af.jpg");
+  }
+  .body-two .bottom {
+    width: 35%;
+    display: block;
+    margin-bottom: 5%;
+  }
+}
+
+/*Body two designing ends here*/
+
+/*Footer designing starts here*/
+
+footer {
+  width: 100%;
+  position: absolute;
+  top: 400%;
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  padding: 30px 0px;
+}
+
+footer .links {
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer .links img {
+  width: 50%;
+  margin-bottom: 5%;
+}
+
+footer .links .pages {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .links .pages a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: opacity 0.3s ease-in;
+}
+
+footer .links .pages a:hover {
+  opacity: 0.4;
+}
+
+footer .social {
+  width: 28%;
+  margin: 0 auto;
+}
+
+footer .social .media {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .social .media a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 27px;
+  transition: opacity 0.3s ease-in;
+  margin-bottom: 9%;
+}
+
+footer .social .media a:hover {
+  opacity: 0.4;
+}
+
+footer .social h3 {
+  font-size: 15px;
+}
+
+@media only screen and (max-width: 980px) {
+  footer {
+    top: 500%;
+    flex-direction: column;
+  }
+  footer .links {
+    width: 100%;
+    justify-content: center;
+  }
+  footer .links img {
+    display: block;
+    margin: 5% auto;
+  }
+  footer .links .pages {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .links .pages a {
+    margin-bottom: 3%;
+  }
+  footer .social {
+    width: 100%;
+    margin-top: 5%;
+  }
+  footer .social .media {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer .social h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+  }
+}
+
+/*Footer designing ends here*/
+/*# sourceMappingURL=index.cb41b962.css.map */
