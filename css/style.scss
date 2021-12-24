@@ -94,7 +94,7 @@
 .body-one{
     width:100%;
     position:absolute;
-    top:100%;
+    top:110%;
     padding:50px 0px;
     @include flexbox;
     img{
@@ -242,7 +242,7 @@
 }
 @media only screen and (max-width:980px){
 .body-two{
-        top:200%;
+        top:225%;
         .heading{
             flex-direction:column;
             justify-content:center;
@@ -353,7 +353,7 @@ footer{
 }
 @media only screen and (max-width:980px){
     footer{
-        top:500%;
+        top:520%;
         flex-direction:column;
         .links{
             width:100%;

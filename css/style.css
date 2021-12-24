@@ -86,7 +86,7 @@
 .body-one {
   width: 100%;
   position: absolute;
-  top: 100%;
+  top: 110%;
   padding: 50px 0px;
   display: flex;
   justify-content: center;
@@ -237,7 +237,7 @@
 
 @media only screen and (max-width: 980px) {
   .body-two {
-    top: 200%;
+    top: 225%;
   }
   .body-two .heading {
     flex-direction: column;
@@ -349,7 +349,7 @@ footer .social h3 {
 
 @media only screen and (max-width: 980px) {
   footer {
-    top: 500%;
+    top: 520%;
     flex-direction: column;
   }
   footer .links {
