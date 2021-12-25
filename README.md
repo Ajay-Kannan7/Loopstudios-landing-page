@@ -4,13 +4,13 @@ This project has utilized a Javascript Scroll animation library called AOS(Anima
 
 This is my first ever project created using SASS which happens to be a CSS preprocessor, and has various efficient functionalities such as variables, mixins, functions, etc.
 Some of them that are utilized by this project are:-
-## Variables in SASS
+## 1) Variables in SASS
 Syntax
 ```
 $[variable-name]: [value]; //This value can be a color or any property value
 ```
 Now this variable can be used for the respective property value.
-## Mixins and Include
+## 2) Mixins and Include
 Syntax
 ```
 @mixin [name]{
@@ -23,7 +23,7 @@ h1{
 @include [name];
 }
 ```
-## Nesting
+## 3) Nesting
 This concept allows us to nest the code to visit children HTML elements through the parent HTML elements.
 ```
 .parent{
@@ -37,7 +37,7 @@ font-size:30px
 }
 ```
 For more about SASS, you can visit the documentation site:- https://sass-lang.com/documentation
-### 2) AOS(Javascript library)
+### 4) AOS(Javascript library)
    This library allows us to add stunning on scroll animations to improve user experience.
    
    GitHub repository: https://github.com/michalsnik/aos
