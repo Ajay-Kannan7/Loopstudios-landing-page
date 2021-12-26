@@ -1,5 +1,5 @@
 # Loopstudios-landing-page
-This is a landing page named Loopstudios created using HTML,SCSS and Javascript.
+This is a landing page named Loopstudios created using HTML,SCSS,Bootstrap and Javascript.
 This project has utilized a Javascript Scroll animation library called AOS(Animate on Scroll)
 
 This is my first ever project created using SASS which happens to be a CSS preprocessor, and has various efficient functionalities such as variables, mixins, functions, etc.
